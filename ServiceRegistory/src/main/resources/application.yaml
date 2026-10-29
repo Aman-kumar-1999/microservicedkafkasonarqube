@@ -1,0 +1,13 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: ServiceRegistory
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  server:
+    enable-self-preservation: true
