@@ -19,6 +19,7 @@
         <module>config-server</module>
         <module>ServiceRegistory</module>
         <module>auth-services</module>
+        <module>payment-services</module>
     </modules>
     <url/>
     <licenses>

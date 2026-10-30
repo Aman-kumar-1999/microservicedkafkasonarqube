@@ -1,13 +1,15 @@
+server:
+  port: 8053
 spring:
   cloud:
     gateway:
       routes:
-#        - id: swiggy-app
-#          uri: lb://SWIGGY-APP
-#          predicates:
-#            - Path=/swiggy/**
-#          filters:
-#            - AuthenticationFilter
+        - id: order-services
+          uri: lb://ORDER-SERVICES
+          predicates:
+            - Path=/order/**
+          filters:
+            - AuthenticationFilter
 #
 #
 #        - id: restaurant-service
